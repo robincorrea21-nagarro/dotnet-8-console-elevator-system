@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-8-console-elevator-system", "dotnet-8-console-elevator-system\dotnet-8-console-elevator-system.csproj", "{E66D583B-E22C-42A8-BCAA-ABC9AEF9F8C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-8-console-elevator-system.Tests", "dotnet-8-console-elevator-system.Tests\dotnet-8-console-elevator-system.Tests.csproj", "{E3F76B2E-2EE8-479A-990A-74832F2A4DF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E66D583B-E22C-42A8-BCAA-ABC9AEF9F8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E66D583B-E22C-42A8-BCAA-ABC9AEF9F8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E66D583B-E22C-42A8-BCAA-ABC9AEF9F8C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F76B2E-2EE8-479A-990A-74832F2A4DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F76B2E-2EE8-479A-990A-74832F2A4DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F76B2E-2EE8-479A-990A-74832F2A4DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F76B2E-2EE8-479A-990A-74832F2A4DF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
