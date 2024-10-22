@@ -21,7 +21,7 @@ namespace dotnet_8_console_elevator_system.Core.Entities
         // Handle a new elevator request (business logic here)
         public void AddRequest(ElevatorRequestDto request, int requestedElevatorId)
         {
-            Console.WriteLine($"Floor {request.Floor} request {request.Direction.ToString().ToLower()} in Elevator {requestedElevatorId}");
+            Console.WriteLine($"\"{request.Direction.ToString().ToLower()}\" request on floor {request.Floor} received in Elevator {requestedElevatorId}.");
 
             // Assign the request to the specific requested elevator
             ElevatorService selectedElevatorService = GetElevatorServiceById(requestedElevatorId);

@@ -35,7 +35,7 @@ namespace dotnet_8_console_elevator_system.Services
             {
                 _elevator.DestinationFloors.Add(floor);
                 SetConsoleColor();
-                Console.WriteLine($"Elevator {_elevator.Id}: Added floor {floor} to destinations.");
+                Console.WriteLine($"Car {_elevator.Id}: Added floor {floor} to destinations.");
                 Console.ResetColor();
 
                 // If autoStartMove is true and the elevator is idle, start moving
@@ -73,7 +73,7 @@ namespace dotnet_8_console_elevator_system.Services
                     }
 
                     SetConsoleColor();
-                    Console.WriteLine($"Elevator {_elevator.Id} is at floor {_elevator.CurrentFloor}");
+                    Console.WriteLine($"Car {_elevator.Id} is at floor {_elevator.CurrentFloor}");
                     Console.ResetColor();
 
                     // Skip 10-second delay when floor destination has already reached
@@ -87,7 +87,7 @@ namespace dotnet_8_console_elevator_system.Services
                 }
 
                 SetConsoleColor();
-                Console.WriteLine($"Elevator {_elevator.Id} has reached and is stopping at floor {_elevator.CurrentFloor}.");
+                Console.WriteLine($"Car {_elevator.Id} has arrived at floor {_elevator.CurrentFloor} and is stopping.");
                 Console.ResetColor();
                 _elevator.State = ElevatorState.Stopped;
 
@@ -98,7 +98,7 @@ namespace dotnet_8_console_elevator_system.Services
             _elevator.State = ElevatorState.Idle;
             _elevator.CurrentDirection = Direction.Idle;
             SetConsoleColor();
-            Console.WriteLine($"Elevator {_elevator.Id} is idle at floor {_elevator.CurrentFloor}, waiting for the next request.");
+            Console.WriteLine($"Car {_elevator.Id} is idle at floor {_elevator.CurrentFloor}, awaiting the next request.");
             Console.ResetColor();
         }
 
